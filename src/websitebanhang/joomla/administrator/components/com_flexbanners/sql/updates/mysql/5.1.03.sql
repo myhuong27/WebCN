@@ -1,1 +1,0 @@
-UPDATE `#__flexbanners` SET `finished` = 0 WHERE `finished` = 1;

@@ -1,1 +1,0 @@
-<?php die("Access Denied"); ?>#x#a:4:{s:7:"1en_gb0";O:8:"stdClass":2:{s:5:"route";s:0:"";s:6:"Itemid";i:109;}s:7:"3en_gb0";O:8:"stdClass":2:{s:5:"route";s:0:"";s:6:"Itemid";i:108;}s:7:"2en_gb0";O:8:"stdClass":2:{s:5:"route";s:0:"";s:6:"Itemid";i:110;}s:7:"0en_gb0";O:8:"stdClass":2:{s:5:"route";s:0:"";s:6:"Itemid";i:149;}}
