@@ -1,10 +1,23 @@
 # CHƯƠNG 3: HIỆN THỰC HÓA NGHIÊN CỨU
-
 ## 3.1. PHÂN TÍCH YÊU CẦU HỆ THỐNG
+Hướng phát triển tiếp theo:
+- Tích hợp AI chatbot
+- Mobile app
+- Thêm tính năng đặt lịch online meeting
+- ...
 
-### 3.1.1. Yêu cầu chức năng
-#### 3.1.1.1. Chức năng dành cho Khách hàng
-- Đăng ký, đăng nhập tài khoản
+---
+
+# 3.9. TÀI LIỆU THAM KHẢO
+
+1. Bộ môn Công nghệ Thông tin, "Hướng dẫn viết luận văn tốt nghiệp đại học ngành CNTT", Trường Đại học Cần Thơ, 2022.
+2. W3Schools, "PHP Tutorial", https://www.w3schools.com/php/
+3. Mozilla Developer Network, "JavaScript Guide", https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+4. Bootstrap, "Bootstrap Documentation", https://getbootstrap.com/docs/
+5. MySQL Documentation, https://dev.mysql.com/doc/
+6. Font Awesome, https://fontawesome.com/
+7. Tài liệu hướng dẫn sử dụng XAMPP, https://www.apachefriends.org/index.html
+8. Các bài báo, tài liệu tham khảo về quản lý thú cưng, chăm sóc thú cưng trên các trang web chuyên ngành.
 - Quản lý thông tin cá nhân
 - Quản lý thông tin thú cưng cá nhân
 - Xem danh sách dịch vụ chăm sóc thú cưng
@@ -877,31 +890,8 @@ if ($_SESSION['vai_tro'] != 2) {
 | 4 | Để trống email/password | Thông báo lỗi | Thông báo lỗi | PASS |
 
 #### 3.6.1.2. Test case đặt lịch
-
-| STT | Dữ liệu đầu vào | Bước thực hiện | Kết quả mong đợi | Kết quả thực tế | Trạng thái |
-|-----|------------------|----------------|------------------|-----------------|------------|
-| 1 | Đăng nhập, chọn dịch vụ hợp lệ, chọn thú cưng, chọn ngày giờ hợp lệ | Đặt lịch dịch vụ | Đặt lịch thành công, hiển thị thông báo xác nhận |  |  |
-| 2 | Đăng nhập, chọn dịch vụ, không chọn thú cưng | Đặt lịch dịch vụ | Thông báo lỗi: Chưa chọn thú cưng |  |  |
-| 3 | Đăng nhập, chọn dịch vụ, chọn thú cưng, chọn ngày giờ đã qua | Đặt lịch dịch vụ | Thông báo lỗi: Ngày giờ không hợp lệ |  |  |
-| 4 | Đăng nhập, chọn dịch vụ, chọn thú cưng, chọn ngày giờ trùng lịch đã đặt | Đặt lịch dịch vụ | Thông báo lỗi: Trùng lịch |  |  |
-
 #### 3.6.1.3. Test case thanh toán
-
-| STT | Dữ liệu đầu vào | Bước thực hiện | Kết quả mong đợi | Kết quả thực tế | Trạng thái |
-|-----|------------------|----------------|------------------|-----------------|------------|
-| 1 | Đặt lịch thành công, chọn thanh toán MoMo, số dư đủ | Thanh toán | Thanh toán thành công, cập nhật trạng thái |  |  |
-| 2 | Đặt lịch thành công, chọn thanh toán VNPay, số dư không đủ | Thanh toán | Thông báo lỗi: Thanh toán thất bại |  |  |
-| 3 | Đặt lịch thành công, chọn thanh toán ZaloPay, nhập sai OTP | Thanh toán | Thông báo lỗi: OTP không hợp lệ |  |  |
-| 4 | Đặt lịch thành công, không chọn phương thức thanh toán | Thanh toán | Thông báo lỗi: Chưa chọn phương thức |  |  |
-
 #### 3.6.1.4. Test case chat
-
-| STT | Dữ liệu đầu vào | Bước thực hiện | Kết quả mong đợi | Kết quả thực tế | Trạng thái |
-|-----|------------------|----------------|------------------|-----------------|------------|
-| 1 | Đăng nhập, mở chat, nhập nội dung hợp lệ | Gửi tin nhắn | Tin nhắn hiển thị, admin nhận được |  |  |
-| 2 | Đăng nhập, mở chat, gửi tin nhắn rỗng | Gửi tin nhắn | Thông báo lỗi: Nội dung không được để trống |  |  |
-| 3 | Đăng nhập, nhận tin nhắn từ admin | Nhận tin nhắn | Tin nhắn hiển thị đúng thời gian |  |  |
-| 4 | Đăng nhập, gửi nhiều tin nhắn liên tục | Gửi tin nhắn | Tất cả tin nhắn gửi thành công, không bị mất |  |  |
 
 ### 3.6.2. Kiểm thử giao diện (UI Testing)
 - Kiểm tra responsive trên các thiết bị
